@@ -133,3 +133,4 @@ MIT License
 <p align="center">
   🌙 <strong>under-the-ocean</strong> · 月光所至，皆为归途
 </p>
+# LLM Browser Plugin - Repository Info
