@@ -1,0 +1,187 @@
+{
+    "browser_type": {
+        "description": "浏览器类型",
+        "hint": "选择浏览器引擎",
+        "type": "string",
+        "default": "chromium",
+        "options": ["chromium", "firefox", "webkit"],
+        "labels": ["Chromium（Chrome内核）", "Firefox（火狐内核）", "WebKit（Safari内核）"]
+    },
+    "verify_browser": {
+        "description": "验证浏览器安装",
+        "hint": "启动前检查浏览器是否已安装",
+        "type": "bool",
+        "default": true
+    },
+    "default_search_engine": {
+        "description": "默认搜索引擎",
+        "hint": "浏览器默认使用的搜索引擎",
+        "type": "string",
+        "default": "必应搜索"
+    },
+    "viewport_width": {
+        "description": "浏览器视窗宽度",
+        "hint": "浏览器窗口的像素宽度",
+        "type": "int",
+        "default": 1920,
+        "slider": {
+            "min": 800,
+            "max": 3840,
+            "step": 100
+        }
+    },
+    "viewport_height": {
+        "description": "浏览器视窗高度",
+        "hint": "浏览器窗口的像素高度",
+        "type": "int",
+        "default": 1400,
+        "slider": {
+            "min": 600,
+            "max": 2160,
+            "step": 100
+        }
+    },
+    "screenshot_quality": {
+        "description": "截图质量",
+        "hint": "截图的JPEG质量（1-100），数值越高图片越大",
+        "type": "int",
+        "default": 65,
+        "slider": {
+            "min": 10,
+            "max": 100,
+            "step": 5
+        }
+    },
+    "max_pages": {
+        "description": "标签页上限",
+        "hint": "每个用户最多同时打开的标签页数量",
+        "type": "int",
+        "default": 5,
+        "slider": {
+            "min": 1,
+            "max": 20,
+            "step": 1
+        }
+    },
+    "timeout": {
+        "description": "操作超时时间",
+        "hint": "浏览器操作的超时时间（秒）",
+        "type": "int",
+        "default": 30,
+        "slider": {
+            "min": 5,
+            "max": 120,
+            "step": 5
+        }
+    },
+    "max_concurrent_users": {
+        "description": "最大并发用户数",
+        "hint": "同时服务的用户数量上限，超出将自动驱逐最不活跃用户",
+        "type": "int",
+        "default": 10,
+        "slider": {
+            "min": 1,
+            "max": 50,
+            "step": 1
+        }
+    },
+    "global_browser_count_limit": {
+        "description": "全局浏览器实例上限",
+        "hint": "服务器上同时运行的浏览器实例总数上限",
+        "type": "int",
+        "default": 20,
+        "slider": {
+            "min": 5,
+            "max": 100,
+            "step": 5
+        }
+    },
+    "max_process_memory_mb": {
+        "description": "单个浏览器进程最大内存",
+        "hint": "单个浏览器进程超过此限制会自动重启（MB）",
+        "type": "int",
+        "default": 512,
+        "slider": {
+            "min": 128,
+            "max": 2048,
+            "step": 64
+        }
+    },
+    "idle_timeout": {
+        "description": "闲置超时时间",
+        "hint": "用户浏览器闲置超过此时间自动关闭（秒）",
+        "type": "int",
+        "default": 600,
+        "slider": {
+            "min": 60,
+            "max": 3600,
+            "step": 60
+        }
+    },
+    "max_operations_per_minute": {
+        "description": "每分钟操作上限",
+        "hint": "用户每分钟最多操作次数，超出触发熔断限制",
+        "type": "int",
+        "default": 20,
+        "slider": {
+            "min": 5,
+            "max": 100,
+            "step": 5
+        }
+    },
+    "hard_operation_timeout": {
+        "description": "硬超时时间",
+        "hint": "单次操作最长执行时间，超时强制重启浏览器（秒）",
+        "type": "int",
+        "default": 60,
+        "slider": {
+            "min": 10,
+            "max": 300,
+            "step": 10
+        }
+    },
+    "cache_max_size_mb": {
+        "description": "截图缓存上限",
+        "hint": "单个用户的截图缓存总大小上限（MB），超出自动清理",
+        "type": "int",
+        "default": 200,
+        "slider": {
+            "min": 10,
+            "max": 1000,
+            "step": 50
+        }
+    },
+    "cache_max_age_hours": {
+        "description": "缓存过期时间（小时）",
+        "hint": "截图文件超过此时间自动删除",
+        "type": "float",
+        "default": 2,
+        "slider": {
+            "min": 0.5,
+            "max": 24,
+            "step": 0.5
+        }
+    },
+    "screenshot_max_bytes": {
+        "description": "截图大小上限",
+        "hint": "单张截图最大字节数，超出自动压缩（字节，1MB=1048576）",
+        "type": "int",
+        "default": 5242880,
+        "slider": {
+            "min": 1048576,
+            "max": 10485760,
+            "step": 1048576
+        }
+    },
+    "monitor_interval": {
+        "description": "监控间隔",
+        "hint": "资源监控检查的间隔时间（秒）",
+        "type": "int",
+        "default": 10,
+        "slider": {
+            "min": 5,
+            "max": 60,
+            "step": 5
+        }
+    }
+}

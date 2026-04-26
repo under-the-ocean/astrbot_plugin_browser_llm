@@ -1,0 +1,20 @@
+name: astrbot_plugin_browser_llm
+display_name: LLM浏览器插件
+desc: 为每个用户创建持久化浏览器缓存文件夹，支持LLM调用，绕过系统30秒限制
+help: 
+  - browser_open: 打开指定网页
+  - browser_click: 在指定坐标点击
+  - browser_input: 在输入框中输入文本
+  - browser_scroll: 滚动网页
+  - browser_screenshot: 获取截图
+  - browser_back: 返回上一页
+  - browser_forward: 前往下一页
+  - browser_zoom: 缩放页面
+  - browser_close: 关闭浏览器
+  - browser_get_tabs: 获取标签页列表
+  - browser_switch_tab: 切换标签页
+  - browser_close_tab: 关闭标签页
+configurable: true
+version: v1.1.0
+author: AI Assistant
+repo: https://github.com/under-the-ocean/astrbot_plugin_browser_llm

@@ -1,0 +1,6 @@
+screenshot_cache/
+__pycache__/
+*.pyc
+browser_cookies.json
+user_favorite.json
+page_source_*.html
